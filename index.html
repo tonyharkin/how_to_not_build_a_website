@@ -1,0 +1,8 @@
+<head>
+  <script src='http://www.genesee.edu/cms/home/jquery/jquery.js'></script>
+</head>
+  <script>
+  $.getJSON('data.json', function (json) {
+    document.write("<table><tr><th>" + Object.keys(json[0])[0] + "</th><th>" + Object.keys(json[1])[0] + "</th></tr><tr><td>" + json[0][Object.keys(json[0])[0]] + "</td><td>" + json[1][Object.keys(json[1])[0]] + "</td></tr></table>");
+  });
+  </script>
